@@ -149,8 +149,7 @@ if __name__ == "__main__":
 		text = retrieve_text_from_input(input_text)
 		
 		if "move forward" in input_text:
-			move_thread = threading.Thread(target=step_forward, name="move_thread")
-			move_thread.start()
+			step_forward()
 		speak_text(text, SPEAKER_CARD)
 
 
